@@ -1,3 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .error {
+            display: block;
+            color: red;
+            font-size: 13px;
+        }
+
+        #successMessage {
+            color: green;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
 <div class="container">
     <h1>Registration Form</h1>
 
@@ -15,8 +80,7 @@
         <small class="error" id="passwordError"></small>
 
         <label for="confirmPassword">Confirm Password</label>
-        <input type="password" id="confirmPassword"
-               placeholder="Confirm password">
+        <input type="password" id="confirmPassword" placeholder="Confirm password">
         <small class="error" id="confirmPasswordError"></small>
 
         <label for="age">Age</label>
@@ -27,7 +91,6 @@
         <p id="successMessage"></p>
     </form>
 </div>
-
 
 <script>
 const form = document.getElementById("registerForm");
@@ -90,3 +153,7 @@ form.addEventListener("submit", function(event) {
     }
 });
 </script>
+
+</body>
+</html>
+
